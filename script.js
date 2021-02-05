@@ -69,7 +69,7 @@ $(document).ready(function () {
       var imageC = response.countryInfo.flag;
   
       //display into html the country's content
-      $("#countryInfo").html("<p><b>Cases</b><br>" + casesC + "</p>" +
+      $("#countryInfo").html("<p><b>Total Cases</b><br>" + casesC + "</p>" +
       "<p><b>Deaths</b><br>" + deathsC + "</p>" +
       "<p><b>Recovered</b><br>" + recoveredC + "</p>" + 
       "<p><b>Active</b><br>" + activeC + "</p>" +
