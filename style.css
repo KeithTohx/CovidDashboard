@@ -52,7 +52,6 @@ h1 {
 #globalDetails p, #detailsDone h6 {
     font-size: 15px;
     margin-bottom: 0px;
-    font-family: 'Cabin', sans-serif;
 }
 
 #globalDetails h3, #detailsDone h5, #countryDetails p {
