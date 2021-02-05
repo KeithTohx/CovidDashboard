@@ -136,36 +136,4 @@ $(document).ready(function () {
     });
   }
   getAllCountries();
-
-  //retrieve localstorage item 
-  $("#country").html(localStorage.getItem('country'));//--> gets replaced with malaysia 
-
-
-  let countryList = [];
-  if (localStorage.getItem('countryList')) {
-    //check whether there's localstorage first then we assign
-    countryList = JSON.parse(localStorage.getItem('countryList'));
-    let countryInfo = "";
-    //decide where to display our things...
-    for (var i = 0; i < countryList.length; i++) {
-      //print our details
-      console.log('Country Name', countryList[i].name);
-      //backticks are template literals ``
-      //${} --> inside a template literal is a variable
-      countryInfo = `${countryInfo} <tr><td> ${countryList[i].name}</td><td> ${countryList[i].deaths}</td><td> ${countryList[i].cases}</td><td> ${countryList[i].recoveries}</td>
-    </tr>`;
-
-      //alternate method
-      //countryInfo = countryInfo + <whatever..>
-      /*
-      countryInfo += "<tr> <td>" + countryList[i].name + "</td>" + "<td>" + countryList[i].deaths + "</td>" + 
-      "<td>" + countryList[i].cases + "</td>" + 
-      "<td>" + countryList[i].recoveries + "</td>";
-      */
-    }//end loop
-    //target country list and replace with data 
-    $("#country-list").html(countryInfo);
-  } else {
-    console.log('no localstorage data found');
-  }
 })
