@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>COVID-19</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
    crossorigin="anonymous">
    <link href="style.css" rel="stylesheet">
@@ -14,7 +14,7 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div class="container" style="padding: 20px;">
     <!-- total info -->
-    <h1 style="text-align: center;padding-bottom: 12px;">COVID-19 Pandemic Dashboard</h1>
+    <h1 style="text-align: center;padding-bottom: 12px;">COVID-19 Pandemic Data Dashboard</h1>
     <h2>Total Global Cases</h2>
     <div id="globalDetails" class="flex-container">
       <div style="background-color: lightcoral;">
@@ -36,7 +36,7 @@
     </div>
   </div>
 
-  <div class="container" style="padding: 20px;">
+  <div class="container" style="padding-left: 20px; padding-right: 20px;">
     <!-- country info -->
     <h2 style="padding-top: 30px;">Cases by Countries</h2>
     <div id="countryDetails">
@@ -70,23 +70,6 @@
     <!-- all countries -->
     <h2 style="padding-top: 30px;">Cases at a Glance</h2>
     <div id="allCountriesDetails" class="flex-container2"></div>
-  </div>
-
-  <div class="container" style="padding: 20px;">
-    <!-- create covid details -->
-    <h2 style="padding-top: 30px;">Create COVID-19 Details</h2>
-    <table class="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th>Country Name</th>
-          <th>Deaths</th>
-          <th>Cases</th>
-          <th>Recoveries</th>
-        </tr>
-      </thead>
-      <tbody id="country-list"></tbody>
-    </table>
-    <button type="submit" class="btn btn-primary" id="form">Add a country</button>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
