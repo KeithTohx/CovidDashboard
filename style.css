@@ -2,6 +2,10 @@
     font-family: 'Cabin', sans-serif;
 }
 
+h1 {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
