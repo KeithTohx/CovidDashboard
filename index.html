@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+   crossorigin="anonymous">
+   <link href="style.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="container" style="padding: 20px;">
+    <!-- total info -->
+    <h1 style="text-align: center;padding-bottom: 12px;">COVID-19 Pandemic Dashboard</h1>
+    <h2>Total Global Cases</h2>
+    <div id="globalDetails" class="flex-container">
+      <div style="background-color: lightcoral;">
+        <h3 id="globalCases" style="color: darkred;"></h3>
+        <p>Cases</p>
+      </div>
+      <div style="background-color: lightsalmon;">
+        <h3 id="globalCritical" style="color: saddlebrown;"></h3>
+        <p>Critcal</p>
+      </div>
+      <div style="background-color: lightslategray;">
+        <h3 id="globalDeaths"></h3>
+        <p>Deaths</p>
+      </div>
+      <div style="background-color: aquamarine;">
+        <h3 id="globalRecovered" style="color: darkgreen;"></h3>
+        <p>Recovered</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding: 20px;">
+    <!-- country info -->
+    <h2 style="padding-top: 30px;">Cases by Countries</h2>
+    <div id="countryDetails">
+      <form style="padding: 12px;">
+        Select a Country:
+        <select id="selectCountry">
+          <option selected="selected" value="0">~</option>
+          <option value="au">Australia</option>
+          <option value="cn">China</option>
+          <option value="fr">France</option>
+          <option value="in">India</option>
+          <option value="it">Italy</option>
+          <option value="jp">Japan</option>
+          <option value="my">Malaysia</option>
+          <option value="sg">Singapore</option>
+          <option value="kr">South Korea</option>
+          <option value="uk">United Kingdom</option>
+          <option value="us">United States</option>
+        </select>
+      </form>
+      <div class="row" id="info" style="--bs-gutter-x: 0">
+        <div class="col-sm" id="countryFlag" style="text-align: center; padding-bottom: 20px;"></div>
+        <div class="col-sm">
+          <div id="countryInfo" class="flex-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding: 20px;">
+    <!-- all countries -->
+    <h2 style="padding-top: 30px;">Cases at a Glance</h2>
+    <div id="allCountriesDetails" class="flex-container2"></div>
+  </div>
+
+  <div class="container" style="padding: 20px;">
+    <!-- create covid details -->
+    <h2 style="padding-top: 30px;">Create COVID-19 Details</h2>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Country Name</th>
+          <th>Deaths</th>
+          <th>Cases</th>
+          <th>Recoveries</th>
+        </tr>
+      </thead>
+      <tbody id="country-list"></tbody>
+    </table>
+    <button type="submit" class="btn btn-primary" id="form">Add a country</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+	</script>
+  <script src="script.js"></script>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+</html>
