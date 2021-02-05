@@ -1,1 +1,2 @@
-# CovidDashboard
+# Covid Dashboard
+### by Keith Toh
