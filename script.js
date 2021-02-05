@@ -15,8 +15,6 @@ $(document).ready(function () {
     };
 
     $.ajax(settings).done(function (response) {
-      console.log(response);
-
       var casesG = response.cases;
       var criticalG = response.critical;
       var deathsG = response.deaths;
@@ -61,8 +59,6 @@ $(document).ready(function () {
     };
 
     $.ajax(settings).done(function (response) {
-      console.log(response);
-
       var nameC = response.country;
       var casesC = response.cases;
       var deathsC = response.deaths;
@@ -104,8 +100,6 @@ $(document).ready(function () {
     };
 
     $.ajax(settings).done(function (response) {
-      console.log(response);
-  
       //display into html the global's content
       for (var i=0; i<(response).length; i++)
       {
