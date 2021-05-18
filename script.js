@@ -1,7 +1,11 @@
 $(document).ready(function () {
-  // get current Date & Time
-  var today = new Date();
-  $("#currentDate").html(`Today is ${today.toDateString()}`);
+  // get and display current Date 
+  const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  let currentDate = new Date()
+  let formatDay = days[currentDate.getDay()];
+  let formatDate = currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
+  $("#currentDate").html(`Today is ${formatDay}, ${formatDate}`);
 
   // for total global cases data
   function getGlobal() {
