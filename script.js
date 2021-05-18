@@ -19,6 +19,12 @@ $(document).ready(function () {
       var criticalG = response.critical;
       var deathsG = response.deaths;
       var recoveredG = response.recovered;
+
+      //format numbers with , as thousands separators
+      casesG = casesG.toLocaleString('en-US');
+      criticalG = criticalG.toLocaleString('en-US');
+      deathsG = deathsG.toLocaleString('en-US');
+      recoveredG = recoveredG.toLocaleString('en-US');
   
       //display into html the global's content
       $("#globalCases").append(casesG);
@@ -67,6 +73,14 @@ $(document).ready(function () {
       var criticalC = response.critical;
       var testsC = response.tests;
       var imageC = response.countryInfo.flag;
+
+      //format numbers with , as thousands separators
+      casesC = casesC.toLocaleString('en-US');
+      criticalC = criticalC.toLocaleString('en-US');
+      deathsC = deathsC.toLocaleString('en-US');
+      recoveredC = recoveredC.toLocaleString('en-US');
+      activeC = activeC.toLocaleString('en-US');
+      testsC = testsC.toLocaleString('en-US');
   
       //display into html the country's content
       $("#countryInfo").html("<p><b>Total Cases</b><br>" + casesC + "</p>" +
@@ -119,6 +133,9 @@ $(document).ready(function () {
         img.id = "allCountryFlag";
         var loc = document.getElementById("details");
         loc.appendChild(img);
+
+        //format numbers with , as thousands separators
+        casesA = casesA.toLocaleString('en-US');
 
         $("#details").append("<h6>" + countryA + "</h6>");
         $("#details").append("<h5>" + casesA + "</h5>");
