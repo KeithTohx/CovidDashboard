@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  $("#form").click(function(){
-    window.location.href = "form.html";
-  });
+  // get current Date & Time
+  var today = new Date();
+  $("#currentDate").html(`Today is ${today.toDateString()}`);
 
   // for total global cases data
   function getGlobal() {
