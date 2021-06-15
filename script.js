@@ -5,7 +5,7 @@ $(document).ready(function () {
   let currentDate = new Date()
   let formatDay = days[currentDate.getDay()-1];
   let formatDate = currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
-  $("#currentDate").html(`Today is ${formatDay}, ${formatDate}`);
+  $("#currentDate").html(`Welcome! Today is ${formatDay}, ${formatDate}`);
 
   // for total global cases data
   function getGlobal() {
@@ -89,8 +89,8 @@ $(document).ready(function () {
       //display into html the country's content
       $("#countryInfo").html("<p><b>Total Cases</b><br>" + casesC + "</p>" +
       "<p><b>Active</b><br>" + activeC + "</p>" +
-      "<p><b>Critical</b><br>" + criticalC + "</p>" +
       "<p><b>Recovered</b><br>" + recoveredC + "</p>" + 
+      "<p><b>Critical</b><br>" + criticalC + "</p>" +
       "<p><b>Deaths</b><br>" + deathsC + "</p>" +
       "<p><b>Tests Done</b><br>" + testsC + "</p>");
 
