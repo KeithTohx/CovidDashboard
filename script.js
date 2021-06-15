@@ -88,10 +88,10 @@ $(document).ready(function () {
   
       //display into html the country's content
       $("#countryInfo").html("<p><b>Total Cases</b><br>" + casesC + "</p>" +
-      "<p><b>Deaths</b><br>" + deathsC + "</p>" +
-      "<p><b>Recovered</b><br>" + recoveredC + "</p>" + 
       "<p><b>Active</b><br>" + activeC + "</p>" +
       "<p><b>Critical</b><br>" + criticalC + "</p>" +
+      "<p><b>Recovered</b><br>" + recoveredC + "</p>" + 
+      "<p><b>Deaths</b><br>" + deathsC + "</p>" +
       "<p><b>Tests Done</b><br>" + testsC + "</p>");
 
       $("#countryFlag").html("<h4>" + nameC + "</h4>");
