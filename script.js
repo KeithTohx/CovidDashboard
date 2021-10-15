@@ -5,7 +5,7 @@ $(document).ready(function () {
   let currentDate = new Date()
   let formatDay = days[currentDate.getDay()-1];
   let formatDate = currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
-  $("#currentDate").html(`Welcome! Today is ${formatDay}, ${formatDate}`);
+  $("#currentDate").html(`Welcome!</br>Today is ${formatDay}, ${formatDate}`);
 
   // for total global cases data
   function getGlobal() {

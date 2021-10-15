@@ -30,7 +30,7 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top.png"></button>
   <div class="container" style="padding: 20px;">
     <!-- total info -->
     <h1 style="text-align: center;">COVID-19 Data Dashboard</h1>
@@ -39,19 +39,19 @@
     <div id="globalDetails" class="flex-container">
       <div style="background-color: lightsalmon;">
         <h3 id="globalCases" style="color: saddlebrown;"></h3>
-	<p><b>Total Cases</b></p>
+	      <p>Total Cases</p>
       </div>
       <div style="background-color: lightcoral;">
         <h3 id="globalCritical" style="color: darkred;"></h3>
-        <p><b>Critical/<b></p>
+        <p>Critical</p>
       </div>
       <div style="background-color: lightslategray;">
         <h3 id="globalDeaths"></h3>
-        <p><b>Deaths</b></p>
+        <p>Deaths</p>
       </div>
       <div style="background-color: aquamarine;">
         <h3 id="globalRecovered" style="color: darkgreen;"></h3>
-        <p><b>Recovered</b></p>
+        <p>Recovered</p>
       </div>
     </div>
   </div>
@@ -65,10 +65,13 @@
         <select id="selectCountry">
           <option selected="selected" value="0">~</option>
           <option value="au">Australia</option>
+          <option value="bn">Brunei</option>
           <option value="ca">Canada</option>
           <option value="cn">China</option>
+          <option value="dk">Denmark</option>
           <option value="fi">Finland</option>
           <option value="fr">France</option>
+          <option value="de">Germany</option>
           <option value="hk">Hong Kong</option>
           <option value="in">India</option>
           <option value="id">Indonesia</option>
@@ -76,9 +79,11 @@
           <option value="jp">Japan</option>
           <option value="my">Malaysia</option>
           <option value="ma">Myanmar</option>
+          <option value="nl">Netherlands</option>
           <option value="ph">Philippines</option>
           <option value="sg">Singapore</option>
           <option value="kr">South Korea</option>
+          <option value="es">Spain</option>
           <option value="tw">Taiwan</option>
           <option value="th">Thailand</option>
           <option value="uk">United Kingdom</option>

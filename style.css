@@ -77,3 +77,7 @@ h1 {
 #myBtn:hover {
     background-color: #555;
 }
+
+#myBtn img{
+    width: 30px;
+}
