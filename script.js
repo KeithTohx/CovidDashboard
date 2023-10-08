@@ -1,9 +1,9 @@
 $(document).ready(function () {
   // get and display current Date 
   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let currentDate = new Date()
-  let formatDay = days[currentDate.getDay()-1];
+  let formatDay = days[currentDate.getDay()];
   let formatDate = currentDate.getDate() + " " + months[currentDate.getMonth()] + " " + currentDate.getFullYear();
   $("#currentDate").html(`Welcome!</br>Today is ${formatDay}, ${formatDate}`);
 
